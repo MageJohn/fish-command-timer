@@ -36,11 +36,11 @@
 # To re-enable:
 #     set fish_command_timer_enabled 1
 if not set -q fish_command_timer_enabled
-  set fish_command_timer_enabled 1
+  set -g fish_command_timer_enabled 1
 end
 # Whether to display the exit status of the previous command.
 if not set -q fish_command_timer_status_enabled
-  set fish_command_timer_status_enabled 0
+  set -g fish_command_timer_status_enabled 0
 end
 
 # The color of the output.
@@ -53,14 +53,14 @@ end
 # If empty, disable colored output. Set it to empty if your terminal does not
 # support colors.
 if not set -q fish_command_timer_color
-  set fish_command_timer_color blue
+  set -g fish_command_timer_color blue
 end
 # Similarly, the color to use for displaying success and failure exit statuses.
 if not set -q fish_command_timer_success_color
-  set fish_command_timer_success_color green
+  set -g fish_command_timer_success_color green
 end
 if not set -q fish_command_timer_fail_color
-  set fish_command_timer_fail_color $fish_color_status
+  set -g fish_command_timer_fail_color $fish_color_status
 end
 
 # The display format of the current time.
@@ -71,14 +71,14 @@ end
 #
 # If empty, disables printing of current time.
 if not set -q fish_command_timer_time_format
-  set fish_command_timer_time_format '%b %d %I:%M%p'
+  set -g fish_command_timer_time_format '%b %d %I:%M%p'
 end
 
 # Whether to print command timings up to millisecond precision.
 #
 # If set to 0, will print up to seconds precision.
 if not set -q fish_command_timer_millis
-  set fish_command_timer_millis 1
+  set -g fish_command_timer_millis 1
 end
 
 # Whether to export the duration string as a shell variable.
@@ -86,13 +86,13 @@ end
 # When set, this will export the duration string as an environment variable
 # called $CMD_DURATION_STR.
 if not set -q fish_command_timer_export_cmd_duration_str
-  set fish_command_timer_export_cmd_duration_str 1
+  set -g fish_command_timer_export_cmd_duration_str 1
 end
 if begin
      set -q fish_command_timer_export_cmd_duration_str; and \
      [ "$fish_command_timer_export_cmd_duration_str" -ne 0 ]
    end
-  set CMD_DURATION_STR
+  set -g CMD_DURATION_STR
 end
 
 # The minimum command duration that should trigger printing of command timings,
@@ -101,7 +101,7 @@ end
 # When set to a non-zero value, commands that finished within the specified
 # number of milliseconds will not trigger printing of command timings.
 if not set -q fish_command_timer_min_cmd_duration
-  set fish_command_timer_min_cmd_duration 0
+  set -g fish_command_timer_min_cmd_duration 0
 end
 
 

@@ -19,17 +19,17 @@ variable in your subsequent prompt.
 
 This script requires fish shell 2.2 or above. It should run pretty much out of
 the box on modern Linux and Mac OS X systems. Please report any
-incompatibilities [on GitHub](https://github.com/jichu4n/fish-command-timer/issues).
+incompatibilities [on GitHub](https://github.com/MageJohn/fish-command-timer/issues).
 
 ## Installation
 
-1. Download [`conf.d/fish_command_timer.fish`](https://github.com/jichu4n/fish-command-timer/blob/master/conf.d/fish_command_timer.fish) and put it in `~/.config/fish/conf.d/` as per [Fish shell convention](https://fishshell.com/docs/current/index.html#initialization).
-2. If the above doesn't work for you (perhaps because your custom settings overrides the extension), you could try sourcing it directly. Download [`conf.d/fish_command_timer.fish`](https://github.com/jichu4n/fish-command-timer/blob/master/conf.d/fish_command_timer.fish) and put it in `~/.config/fish/`, then add the following in your `~/.config/fish/config.fish` at the end:
-   ```
-   source ~/.config/fish/fish_command_timer.fish
-   ```
+This version of the plugin is best installed with [fundle](https://github.com/danhper/fundle).
+Follow the instructions from that project to set it up. Once it's up, install this plugin by adding\
+the following to your configured plugins:
 
-That's it :)
+```fish
+fundle plugin 'MageJohn/fish-command-timer'
+```
 
 ## Settings
 

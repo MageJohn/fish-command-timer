@@ -57,7 +57,7 @@ function fish_command_timer_handle_postexec
   else
     set timing_str "[ $cmd_duration_str ]"
   end
-  set -l timing_str_length (fish_command_timer_strlen "$timing_str")
+  set -l timing_str_length (string length -- $timing_str)
 
   # Compute timing string with color.
   set -l timing_str_colored
@@ -79,7 +79,7 @@ function fish_command_timer_handle_postexec
     set -l signal (fish_status_to_signal $last_status)
     set status_str "[ $signal ]"
   end
-  set -l status_str_length (fish_command_timer_strlen "$status_str")
+  set -l status_str_length (string length -- $status_str)
 
   # Compute status string with color.
   set -l status_str_colored

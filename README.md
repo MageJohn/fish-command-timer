@@ -17,7 +17,7 @@ variable in your subsequent prompt.
 
 ## Requirements
 
-This script requires fish shell 2.2 or above. It should run pretty much out of
+This script requires fish shell 2.3 or above. It should run pretty much out of
 the box on modern Linux and Mac OS X systems. Please report any
 incompatibilities [on GitHub](https://github.com/MageJohn/fish-command-timer/issues).
 

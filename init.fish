@@ -26,7 +26,7 @@
 # For the original version, please see
 #     https://github.com/jichu4n/fish-command-timer
 #
-# Requires fish 2.2 or above.
+# Requires fish 2.3 or above.
 
 # SETTINGS
 # ========
